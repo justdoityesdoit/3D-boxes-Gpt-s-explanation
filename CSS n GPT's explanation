@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+//These lines import two fonts from Google Fonts - Roboto and Poppins - 
+which will be used throughout the CSS file.
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+//This sets the box-sizing property for all elements to border-box, 
+which includes padding and border in the element's total width and height.
+
+
+
+
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+//This block sets various properties for the body element, 
+including the background color, font family, and flexbox layout.
+
+
+
+
+.magic {
+  background-color: #f9ca24;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  letter-spacing: 1px;
+  box-shadow: 0 3px rgba(249, 202, 36, 0.5);
+  z-index: 100;
+}
+//This block styles the button with the class "magic" that appears at the top of the page. 
+It sets various properties such as the background color, font family,
+and position.
+
+
+
+.magic:focus {
+  outline: none;
+}
+//This styles the appearance of the button when it is focused (i.e. clicked)
+to remove the default outline.
+
+
+
+.magic:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+//This styles the appearance of the button when it is clicked to 
+remove the box-shadow and move the button down slightly.
+
+
+
+
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.boxes.big {
+  width: 600px;
+  height: 600px;
+}
+
+.boxes.big .box {
+  transform: rotateZ(360deg);
+}
+//This block styles the container for the rotating boxes. 
+It sets various properties such as display, height, width, and flexbox layout. 
+The second and third selectors modify the styling for the "big" version 
+of the container and the individual boxes within it.
+
+
+
+.box {
+  background-image: url('https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+  transition: 0.4s ease;
+}
+
+.box::after {
+  content: '';
+  background-color: #f6e58d;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
+}
+
+.box::before {
+  content: '';
+  background-color: #f9ca24;
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  transform: skewX(45deg);
+}
+//.box::before and .box::after are CSS pseudo-elements used to add decorative elements 
+to the .box element. They are positioned absolutely relative to the .box element and 
+have a width and height set to create the desired effect.
+
+.box::before creates a yellow triangle that extends from the bottom left of the box, 
+and .box::after creates a yellow rectangle that extends from the top right of the box. 
+Both elements are skewed to give them a slanted appearance.
+
+The transition property on the .box element specifies that any changes made 
+to the element's CSS properties should be animated over a 0.4 second duration with 
+an easing effect. This creates a smooth animation effect when the boxes transform or change in size.
+
+That's a brief summary of the remaining CSS code. Let me know if you have any more questions!
+
