@@ -1,0 +1,31 @@
+<link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVl
+  kMXe40PTKnXrLnZ9+fkDaog=="
+  crossorigin="anonymous"
+  />
+//This link tag adds a CSS stylesheet to the document, specifically the Font Awesome icon library. 
+The integrity attribute provides a secure way to ensure that the file being loaded hasn't been tampered with. 
+The crossorigin attribute indicates that the file is being loaded from a different domain and 
+allows the browser to handle any cross-origin issues.
+
+
+
+<button id="btn" class="magic">magic 🎩 </button>
+//This is a button element with an id attribute of btn and a class attribute of magic. 
+The button text says "magic 🎩".
+
+
+
+
+<div id="boxes" class="boxes big"></div>
+//This is a div element with an id attribute of boxes and a class attribute of boxes big. 
+This element is empty, but will be used to create a 3D box effect using CSS and JavaScript.
+
+
+
+
+
+
+
